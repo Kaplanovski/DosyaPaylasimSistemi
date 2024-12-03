@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belge Yükleme Uygulaması</title>
+    <style>
+        /* Genel Gövde Stilleri */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+        }
+
+        /* Başlık Stilleri */
+        h1 { 
+            color: #fff; 
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Yükleme Bölümü Stilleri */
+        .upload-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffffc9;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            width: 320px;
+            text-align: center;
+        }
+
+        /* Dosya Yükleme Butonu ve Girdi Alanı */
+        .upload-section input[type="file"] {
+            display: block;
+            margin: 15px auto;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            width: 100%;
+            transition: border 0.3s;
+        }
+
+        .upload-section input[type="file"]:focus {
+            border-color: #84fab0;
+            outline: none;
+        }
+
+        .upload-section button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .upload-section button:hover {
+            background-color: #45a049;
+        }
+
+        /* Yüklenen Belgeler Bölümü Stilleri */
+        .document-list {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .document-list h2 {
+            color: #fff;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Yüklenen Belge Stilleri */
+        .document {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: #ffffffc9;
+            border-bottom: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
+
+        .document:hover {
+            transform: translateY(-5px);
+        }
+
+        .document a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .document a:hover {
+            color: #0056b3;
+        }
+
+        /* İndir Butonu Stili */
+        .download-button {
+            background: none;
+            color: #007bff;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .download-button:hover {
+            color: #0056b3;
+        }
+
+        /* Logo ve Görsel Uyarlama */
+        .logo {
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Çıkış Yap Butonu */
+        .logout-container {
+            margin-top: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logout-container button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout-container button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images.jpg') }}" alt="Logo" class="logo">
+    </header>
+    <h1>İNÖNÜ OSB MYO DOSYA PAYLAŞIM SİSTEMİ</h1>
+
+    <div class="upload-section">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Yükle</button>
+        </form>
+    </div>
+
+    <div class="document-list">
+        <h2>Yüklenen Belgeler</h2>
+        {% if files %}
+            {% for file in files %}
+                <div class="document">
+                    <a href="{{ url_for('uploaded_file', filename=file) }}">{{ file }}</a>
+                    <a href="{{ url_for('uploaded_file', filename=file) }}" download class="download-button">📥 İndir</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p style="color: white; font-size: 1.1em;">Henüz yüklenmiş bir belge yok.</p>
+        {% endif %}
+    </div>
+
+    <!-- Çıkış Yap Butonu -->
+    <div class="logout-container">
+        <form action="/logout" method="get">
+            <button type="submit">Çıkış Yap</button>
+        </form>
+    </div>
+</body>
+</html>

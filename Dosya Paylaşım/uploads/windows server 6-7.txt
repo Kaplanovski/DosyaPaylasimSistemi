@@ -1,0 +1,279 @@
+1. Aşağıdaki teknolojilerden hangisi, Windows Server 2016'da sanal makinelerin oluşturulmasını sağlayan bir teknolojiyi yönetir?
+a) NUMA
+b) Hyper-Threading (HT)
+c) Symmetric Multiprocessing (SMP)
+d) Hyper-V ✓
+e) MultiCore
+
+2. Windows Server 2016'da, kullanıcı hesaplarını ve gruplarını yöneten yönetimsel aracın adı aşağıdakilerden hangisidir?
+a) Active Directory Administrative Center
+b) Active Directory Domains and Trusts
+c) Group Policy Management Console
+d) Active Directory Site and Services
+e) Active Directory Users and Computers ✓
+
+3. MMC konsol ağacında görüntülenen nesnelerin detaylarının görüntülendiği bölüm hangisidir?
+a) Console Tree
+b) Action Menu
+c) More Actions
+d) Add/Remove Snap-In
+e) Details Pane ✓
+
+4. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm nesnelerinin ısım bilgilerini yöneten yapısal bileşen olarak kullanılır?
+a) Domain Controller
+b) Domain Tree
+c) Schema Master ✓
+d) Domain Naming Master
+e) Infrastructure Master
+
+5. Aşağıdaki teknolojilerden hangisi, Windows Server 2016'da bir işlemciyi kullanarak birden fazla işlemci gibi çalışmasını sağlayan bir teknolojiyi yönetir?
+a) Hyper-V
+b) NUMA
+c) Symmetric Multiprocessing (SMP) ✓
+d) Hyper-Threading (HT)
+e) MultiCore
+
+6. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Computers ✓
+c) Domain Controller
+d) Organizational Unit
+e) Trust Relationship
+
+7. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) NUMA
+b) Hyper-Threading (HT)
+c) Symmetric Multiprocessing (SMP) ✓
+d) MultiCore
+e) Windows Executive
+
+8. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm domain controller'larının birbirlerine replikasyon yöntemiyle verilerini sincronize etmesini sağlayan yapısal bileşen olarak kullanılır?
+a) Domain Naming Master
+b) Infrastructure Master
+c) PDC Emulator
+d) Schema Master
+e) Operation Master Roller ✓
+
+9. MMC konsol ağacında görüntülenen nesnelerin detaylarının görüntülendiği bölüm hangisidir?
+a) Console Tree
+b) Details Pane ✓
+c) Action Menu
+d) More Actions
+e) Add/Remove Snap-In
+
+10. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Users ✓
+c) Domain Controller
+d) Organizational Unit
+e) Trust Relationship
+
+11. Aşağıdakilerden hangisi, Active Directory Domain Service'de kullanıcı hesaplarını ve gruplarını yöneten yönetimsel aracın adıdır?
+a) Active Directory Administrative Center
+b) Active Directory Domains and Trusts
+c) Active Directory Users and Computers ✓
+d) Group Policy Management Console
+e) Active Directory Site and Services
+
+12. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm domain controller'larının adlarını yöneten yapısal bileşen olarak kullanılır?
+a) Infrastructure Master
+b) PDC Emulator
+c) Domain Naming Master ✓
+d) Schema Master
+e) Operation Master Roller
+
+13. MMC konsol ağacında görüntülenen nesnelerin detaylarının görüntülendiği bölüm hangisidir?
+a) Action Menu
+b) More Actions
+c) Details Pane ✓
+d) Console Tree
+e) Add/Remove Snap-In
+
+14. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controller
+c) Organizational Unit
+d) Trust Relationship
+e) Built-In ✓
+
+15. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) NUMA
+b) Hyper-Threading (HT)
+c) MultiCore
+d) Symmetric Multiprocessing (SMP) ✓
+e) Windows Executive
+
+16. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm nesnelerinin ısım bilgilerini yöneten yapısal bileşen olarak kullanılır?
+a) Domain Naming Master
+b) Infrastructure Master
+c) Schema Master ✓
+d) Domain Controller
+e) Operation Master Roller
+
+17. MMC konsol ağacında görüntülenen nesnelerin detaylarının görüntülendiği bölüm hangisidir?
+a) Add/Remove Snap-In
+b) Console Tree
+c) Action Menu
+d) Details Pane ✓
+e) More Actions
+
+18. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controller
+c) Organizational Unit
+d) Trust Relationship
+e) Domain Controllers ✓
+
+19. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm domain controller'larının adlarını yöneten yapısal bileşen olarak kullanılır?
+a) Schema Master
+b) Domain Naming Master ✓
+c) Infrastructure Master
+d) PDC Emulator
+e) Operation Master Roller
+
+20. MMC konsol ağacında görüntülenen nesnelerin detaylarının görüntülendiği bölüm hangisidir?
+a) More Actions
+b) Action Menu
+c) Console Tree
+d) Details Pane ✓
+e) Add/Remove Snap-In
+
+21. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controller
+c) Organizational Unit
+d) Trust Relationship ✓
+e) Domain Controllers
+
+22. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) Hyper-Threading (HT)
+b) NUMA
+c) MultiCore
+d) Windows Executive
+e) Symmetric Multiprocessing (SMP) ✓
+
+23. MMC konsol ağacında görüntülenen nesnelerin detaylarının görüntülendiği bölüm hangisidir?
+a) Console Tree
+b) Add/Remove Snap-In
+c) Details Pane ✓
+d) More Actions
+e) Action Menu
+
+24. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controller
+c) Organizational Unit ✓
+d) Trust Relationship
+e) Domain Controllers
+
+25. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) MultiCore
+b) NUMA
+c) Symmetric Multiprocessing (SMP) ✓
+d) Hyper-Threading (HT)
+e) Windows Executive
+
+26. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm domain controller'larının birbirlerine replikasyon yöntemiyle verilerini sincronize etmesini sağlayan yapısal bileşen olarak kullanılır?
+a) Domain Naming Master
+b) Domain Controller
+c) Schema Master
+d) Operation Master Roller ✓
+e) Infrastructure Master
+
+27. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controllers ✓
+c) Organizational Unit
+d) Trust Relationship
+e) Domain Controllers
+
+28. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) Hyper-Threading (HT)
+b) NUMA
+c) Windows Executive
+d) MultiCore
+e) Symmetric Multiprocessing (SMP) ✓
+
+29. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controller
+c) Organizational Unit ✓
+d) Trust Relationship
+e) Domain Controllers
+
+30. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm domain controller'larının birbirlerine replikasyon yöntemiyle verilerini sincronize etmesini sağlayan yapısal bileşen olarak kullanılır?
+a) Infrastructure Master
+b) Schema Master
+c) Domain Controller
+d) Domain Naming Master
+e) Operation Master Roller ✓
+
+31. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain ✓
+b) Domain Controller
+c) Organizational Unit
+d) Trust Relationship
+e) Domain Controllers
+
+32. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) MultiCore
+b) Symmetric Multiprocessing (SMP) ✓
+c) NUMA
+d) Windows Executive
+e) Hyper-Threading (HT)
+
+33. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controller
+c) Trust Relationship ✓
+d) Organizational Unit
+e) Domain Controllers
+
+34. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) Hyper-Threading (HT)
+b) NUMA
+c) Symmetric Multiprocessing (SMP) ✓
+d) Windows Executive
+e) MultiCore
+
+35. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) NUMA
+b) Hyper-Threading (HT)
+c) Symmetric Multiprocessing (SMP) ✓
+d) Windows Executive
+e) MultiCore
+
+36. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain Controller ✓
+b) Domain
+c) Organizational Unit
+d) Trust Relationship
+e) Domain Controllers
+
+37. Aşağıdakilerden hangisi, Windows Server 2016 işletim sisteminde, bir domain'in tüm domain controller'larının birbirlerine replikasyon yöntemiyle verilerini sincronize etmesini sağlayan yapısal bileşen olarak kullanılır?
+a) Domain Naming Master
+b) Schema Master
+c) Domain Controller
+d) Operation Master Roller ✓
+e) Infrastructure Master
+
+38. MMC konsol ağacında görüntülenen nesnelerin detaylarının görüntülendiği bölüm hangisidir?
+a) More Actions
+b) Details Pane ✓
+c) Console Tree
+d) Action Menu
+e) Add/Remove Snap-In
+
+39. Windows Server 2016 işletim sistemi mimarisinde yer alan HAL (Hardware Abstraction Layer) alt katmanı, hangi teknolojiyle birlikte çalışır?
+a) NUMA
+b) Hyper-Threading (HT)
+c) MultiCore
+d) Symmetric Multiprocessing (SMP) ✓
+e) Windows Executive
+
+40. Aşağıdakilerden hangisi, Active Directory Users and Computers konsolunda görüntülenen bir yapısal bileşen olarak kullanılır?
+a) Domain
+b) Domain Controller
+c) Trust Relationship
+d) Domain Controllers
+e) Organizational Unit ✓

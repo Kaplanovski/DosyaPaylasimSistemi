@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <style>
+        /* Genel ayarlar */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Giriş kutusunu merkezde tutar */
+        .login-container {
+            background: #2d3436;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Başlık */
+        .login-container h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #81ecec;
+        }
+
+        /* Açıklama */
+        .login-container p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #b2bec3;
+        }
+
+        /* Giriş alanı */
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1rem;
+            color: #2d3436;
+            background: #dfe6e9;
+        }
+
+        /* Buton */
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #0984e3;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background: #74b9ff;
+        }
+
+        /* Hata mesajı */
+        .warning-message {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        /* Input hata mesajı */
+        .input-error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Hoş Geldiniz</h1>
+        <p>Paylaşım sistemine giriş yapmak için öğrenci numaranızı giriniz.</p>
+        <form id="login-form" action="/login" method="post">
+            <div id="student-id-container">
+                <input type="text" name="student_id" id="student_id" placeholder="Öğrenci Numarası" required maxlength="11">
+                <div id="student-id-warning" class="warning-message"></div> <!-- Uyarı mesajı burada görünecek -->
+            </div>
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('login-form');
+        const studentIdInput = document.getElementById('student_id');
+        const studentIdWarning = document.getElementById('student-id-warning');
+
+        form.addEventListener('submit', function(event) {
+            const studentId = studentIdInput.value;
+            let warningMessage = "";
+
+            // 11 haneli numara kontrolü
+            if (studentId.length !== 11) {
+                warningMessage = 'Geçersiz öğrenci numarası! Öğrenci numarası 11 haneli olmalıdır!';
+                event.preventDefault();
+            }
+
+            // Sadece rakamların girilmesini sağla
+            if (/[^0-9]/.test(studentId)) {
+                warningMessage = 'Öğrenci numarası sadece rakamlardan oluşmalıdır!';
+                event.preventDefault();
+            }
+
+            if (warningMessage) {
+                studentIdWarning.textContent = warningMessage;
+                studentIdInput.classList.add('input-error');
+            } else {
+                studentIdWarning.textContent = '';
+                studentIdInput.classList.remove('input-error');
+            }
+        });
+
+        studentIdInput.addEventListener('input', function() {
+            const value = studentIdInput.value;
+
+            // 11 haneli olana kadar yazılmasına izin ver
+            if (value.length > 11) {
+                studentIdInput.value = value.substring(0, 11);
+            }
+
+            // Sadece rakamların girilmesini sağla
+            if (/[^0-9]/.test(value)) {
+                studentIdInput.value = value.replace(/[^0-9]/g, '');
+            }
+
+            studentIdWarning.textContent = ''; // Kullanıcı yazarken hata mesajını temizle
+            studentIdInput.classList.remove('input-error');
+        });
+    </script>
+</body>
+</html>
