@@ -21,4 +21,10 @@ Kullanıcılar, dosya yükleme işlemine izin veren bir form aracılığıyla do
 Dosya Listeleme ve İndirme
 Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara erişim sağlayabilir ve gerektiğinde indirebilir. Sistem, her bir dosya için kullanıcıya güvenli bir erişim sağlar.
 
-![Uploading image.png…]()
+# 📸 Proje Ekran Görüntüleri
+
+Aşağıda projenin ekran görüntülerini bulabilirsiniz. Solda ve sağda yer alan görüntüler ekranın çalışma şeklini temsil ediyor.
+
+| Sol Ekran (screen)       | Sağ Ekran (screen2)       |
+|---------------------------|---------------------------|
+| ![screen](./screen.png)   | ![screen2](./screen2.png) |
