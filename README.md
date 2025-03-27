@@ -1,27 +1,48 @@
-📁 Dosya Paylaşım Sistemi
-Proje Hakkında
-Dosya Paylaşım Sistemi (DPS), kullanıcıların dosyalarını güvenli bir şekilde yüklemelerini, bu dosyalara erişmelerini ve görüntülemelerini sağlayan bir Flask web uygulamasıdır. Kullanıcıların erişim yetkilendirmesi, öğrenci numarası doğrulaması yoluyla gerçekleştirilir. Uygulama ayrıca dosya listeleme ve dosya indirme gibi işlevleri barındırır. Güvenlik önlemleri ve kullanıcı dostu bir tasarıma odaklanılarak oluşturulmuştur.
+# 📁 Dosya Paylaşım Sistemi
 
-✨ Özellikler
+## Proje Hakkında
+Dosya Paylaşım Sistemi (DPS), kullanıcıların dosyalarını güvenli bir şekilde yüklemelerini, bu dosyalara erişmelerini ve görüntülemelerini sağlayan bir **Flask web uygulamasıdır**. Kullanıcıların erişim yetkilendirmesi, 🆔 öğrenci numarası doğrulaması yoluyla gerçekleştirilir. Uygulama ayrıca 📂 dosya listeleme ve 📥 dosya indirme gibi işlevleri barındırır. Güvenlik önlemleri 🛡️ ve kullanıcı dostu bir tasarıma odaklanılarak oluşturulmuştur.
 
+---
 
-🛠️ Teknik Detaylar
+## ✨ Özellikler
+- **🔒 Güvenlik**: Kullanıcı doğrulama ile yalnızca yetkilendirilmiş kişilerin erişimini sağlar.
+- **📤 Dosya Yükleme**: Kullanıcıların dosyalarını kolay ve güvenli bir şekilde sisteme yüklemesine olanak tanır.
+- **🗂️ Dosya Listeleme ve İndirme**: Yüklenen dosyalar listelenir ve kullanıcılar tarafından indirilebilir.
 
+---
 
-🔧 İşlevlerin Ayrıntıları
-Kullanıcı Doğrulama
+## 🛠️ Teknik Detaylar
+- **🌐 Framework**: Flask, Python tabanlı bir web geliştirme framework'ü.
+- **💾 Veritabanı**: MySQL, kullanıcı doğrulama ve veri saklama işlemleri için kullanılır.
+- **🔑 Oturum Yönetimi**: Flask'in `session` özelliği, kullanıcıların oturumlarını güvenli bir şekilde yönetir.
+- **📂 Dosya İşlemleri**: Dosyalar sistemde bir `uploads` klasöründe saklanır.
+
+---
+
+## 🔧 İşlevlerin Ayrıntıları
+
+### 🆔 Kullanıcı Doğrulama
 Sisteme giriş yapmak isteyen kullanıcılar, öğrenci numaralarını girerek doğrulama sürecinden geçer. Numara şu özelliklere sahip olmalıdır:
+1. **11 haneli** olmalı.
+2. **Yalnızca rakamlardan oluşmalı**.
 
-Girilen öğrenci numarası MySQL veritabanındaki  tablosunda kontrol edilir. Eğer numara bu tabloda kayıtlı değilse kullanıcı giriş yapamaz.
+Girilen öğrenci numarası, MySQL veritabanındaki `izinli_ogrenciler` tablosunda kontrol edilir. Eğer numara bu tabloda kayıtlı değilse kullanıcı giriş yapamaz.
 
-Dosya Yükleme 📤
+---
 
+### 📤 Dosya Yükleme
 Kullanıcılar, dosya yükleme işlemine izin veren bir form aracılığıyla dosyalarını sisteme yükler. Yükleme sırasında:
+- Dosyanın varlığı kontrol edilir.
+- Dosya adı boş bırakılmışsa kullanıcıya bir hata mesajı gösterilir.
+- Dosyalar, sistemde **`uploads`** klasörüne kaydedilir.
 
+---
 
-Dosya Listeleme ve İndirme 📥
+### 📥 Dosya Listeleme ve İndirme
+Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara erişim sağlayabilir ve gerektiğinde indirebilir. Sistem, her bir dosya için güvenli bir erişim sağlar ve dosya önbelleklemesini otomatik olarak yönetir.
 
-Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara erişim sağlayabilir ve gerektiğinde indirebilir. Sistem, her bir dosya için kullanıcıya güvenli bir erişim sağlar.
+ 🚀✨📄
 
 ## 🔧 Teknik Detaylar
 - **🌐 Framework**: Flask, Python tabanlı bir web geliştirme framework'ü olarak kullanılmıştır.
