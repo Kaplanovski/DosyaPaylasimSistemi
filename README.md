@@ -15,10 +15,12 @@ Sisteme giriş yapmak isteyen kullanıcılar, öğrenci numaralarını girerek d
 Girilen öğrenci numarası MySQL veritabanındaki  tablosunda kontrol edilir. Eğer numara bu tabloda kayıtlı değilse kullanıcı giriş yapamaz.
 
 Dosya Yükleme 📤
+
 Kullanıcılar, dosya yükleme işlemine izin veren bir form aracılığıyla dosyalarını sisteme yükler. Yükleme sırasında:
 
 
 Dosya Listeleme ve İndirme 📥
+
 Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara erişim sağlayabilir ve gerektiğinde indirebilir. Sistem, her bir dosya için kullanıcıya güvenli bir erişim sağlar.
 
 # 📸 Proje Ekran Görüntüleri 📸
