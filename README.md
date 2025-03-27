@@ -25,6 +25,6 @@ Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara eri
 
 Aşağıda projenin ekran görüntülerini bulabilirsiniz. Solda ve sağda yer alan görüntüler ekranın çalışma şeklini temsil ediyor.
 
-| Sol Ekran (screen)       | Sağ Ekran (screen2)       |
+| Giriş Ekranı (screen)       | Dosya Paylaşım Ekranı (screen2)       |
 |---------------------------|---------------------------|
 | ![screen](./screen.png)   | ![screen2](./screen2.png) |
