@@ -23,6 +23,31 @@ Dosya Listeleme ve İndirme 📥
 
 Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara erişim sağlayabilir ve gerektiğinde indirebilir. Sistem, her bir dosya için kullanıcıya güvenli bir erişim sağlar.
 
+## 🔧 Teknik Detaylar
+- **🌐 Framework**: Flask, Python tabanlı bir web geliştirme framework'ü olarak kullanılmıştır.
+- **💾 Veritabanı**: MySQL, kullanıcı doğrulama ve veri saklama işlemlerini destekler.
+- **🔑 Oturum Yönetimi**: Flask'in `session` özelliği, giriş yapmış kullanıcıların oturumlarını takip eder.
+- **📂 Dosya İşlemleri**: Python'un `os` modülü, dosya ve klasörlerin yönetimi için kullanılmıştır.
+- **📤 Dosya Yükleme**: Yüklenen dosyalar `uploads` adlı bir klasörde saklanır ve gerektiğinde sunulur.
+
+---
+
+## 🛠️ Gereksinimler
+1. **🖥️ İşletim Sistemi**: Windows, macOS veya Linux
+2. **🐍 Python Sürümü**: Python 3.x
+3. **📦 Gerekli Kütüphaneler**:
+   - Flask:
+     ```bash
+     pip install flask
+     ```
+   - MySQL Connector:
+     ```bash
+     pip install mysql-connector-python
+     ```
+4. **💽 Veritabanı Sunucusu**:
+   - XAMPP ya da MySQL Server
+5. **🌍 Tarayıcı**: Güncel bir tarayıcı (Google Chrome, Firefox, vb.)
+
 # 📸 Proje Ekran Görüntüleri 📸
 
 Aşağıda projenin ekran görüntülerini bulabilirsiniz. Solda ve sağda yer alan görüntüler ekranın çalışma şeklini temsil ediyor.
