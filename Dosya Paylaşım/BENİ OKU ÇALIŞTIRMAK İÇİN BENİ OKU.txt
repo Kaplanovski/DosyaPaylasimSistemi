@@ -1,0 +1,22 @@
+XAMPP MASAÜSTÜNDE AÇIP İLK 2 MYSQL VE APACHE BAŞLATILIR EĞER MASAÜSTÜNDE YOKSA YERELDİSK:C DE XAMMP KLASÖRÜ İÇİNDE xampp-control  PROGRAMI AÇILIR
+
+FLASK İNDİRME KODU     pip install flask
+
+MYSQL İNDİRME KODU     pip install mysql-connector-python
+
+ÇALIŞTIRMA  python -m venv myenv
+
+myenv\Scripts\activate  BU KODDAN SONRA EKRAN KODUN SOLUNDA yeşil bir ibare olarak myenv yazar ardından
+
+PYTHON ÇALIŞTIRMA   python app.py
+
+PYTHON ÇALIŞTIRDIKTAN SONRA PROJE DOSYASI İÇİNDE NGROK ADLI EXE Yİ AÇIP BU SUNUCUYA PORTA BAĞLANIR      ngrok http 5000
+
+Web Interface   altında   olan    Forwarding kısmındaki oluşan linke ctrl+click yapıp projemizi açıyoruz ekranda çıkan visit siteye basıp siteye giriyoruz .
+
+eğer veri tabanına öğrenci no eklemek için xammp da mysql yanındaki admine basın solda ngrok_projeyi seçin ardından izinli_ogrenciler tablosuna gidin ardından üstte olan sql sekmesine tıklayın ve şu kodu girin
+
+INSERT INTO izinli_ogrenciler (ogrenci_no) VALUES (332333040--);
+
+values kısmına istediğiniz öğrenci no girdikten sonra git e basın öğrenci no başarıyla eklenmiştir
+
