@@ -20,3 +20,5 @@ Kullanıcılar, dosya yükleme işlemine izin veren bir form aracılığıyla do
 
 Dosya Listeleme ve İndirme
 Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara erişim sağlayabilir ve gerektiğinde indirebilir. Sistem, her bir dosya için kullanıcıya güvenli bir erişim sağlar.
+
+![Uploading image.png…]()
