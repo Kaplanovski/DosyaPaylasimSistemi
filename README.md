@@ -14,17 +14,17 @@ Sisteme giriş yapmak isteyen kullanıcılar, öğrenci numaralarını girerek d
 
 Girilen öğrenci numarası MySQL veritabanındaki  tablosunda kontrol edilir. Eğer numara bu tabloda kayıtlı değilse kullanıcı giriş yapamaz.
 
-Dosya Yükleme
+Dosya Yükleme 📤
 Kullanıcılar, dosya yükleme işlemine izin veren bir form aracılığıyla dosyalarını sisteme yükler. Yükleme sırasında:
 
 
-Dosya Listeleme ve İndirme
+Dosya Listeleme ve İndirme 📥
 Ana sayfada, yüklenen tüm dosyalar listelenir. Kullanıcılar bu dosyalara erişim sağlayabilir ve gerektiğinde indirebilir. Sistem, her bir dosya için kullanıcıya güvenli bir erişim sağlar.
 
-# 📸 Proje Ekran Görüntüleri
+# 📸 Proje Ekran Görüntüleri 📸
 
 Aşağıda projenin ekran görüntülerini bulabilirsiniz. Solda ve sağda yer alan görüntüler ekranın çalışma şeklini temsil ediyor.
 
-| Giriş Ekranı (screen)       | Dosya Paylaşım Ekranı (screen2)       |
+| Giriş Ekranı 🏞️           | Dosya Paylaşım Ekranı 🏞️ |
 |---------------------------|---------------------------|
 | ![screen](./screen.png)   | ![screen2](./screen2.png) |
